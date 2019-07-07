@@ -5,28 +5,30 @@
  */
 
 
-//Twój komentarz ...
+//Tworze funkcje jeden()
 function jeden() {
 
-    //Twój komentarz ...
+    //Tworze i inicializuje zmienna1 o wartosci 1
     var zmienna1 = 1;
 
-    //Twój komentarz ...
+    //Tworze funcke dwa()
     function dwa() {
 
-        //Twój komentarz ...
+        //Wypisuje wartosc zmienna1
         console.log(zmienna1);
 
-        //Twój komentarz ...
+        //Tworze i inicializuje zmienna2 o wartosci 3
         var zmienna2 = 3;
     }
 
-    //Twój komentarz ...
+    //Wywołuje fukcje dwa()
     dwa();
 
-    //Twój komentarz ...
+    //Próbuje wywołać zmienna2 z wnatrze funkceji dwa() co sie nie udaje
+    //Zmienna2 jest zdefiniowana tylko wewnątrz dunkcji dwa() i nie da sie
+    // do niej odłołać z innego miejsca
     console.log(zmienna2)
 }
 
-//Twój komentarz ...
+//Wywołuje fukcje jeden()
 jeden()

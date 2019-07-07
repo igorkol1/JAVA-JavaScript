@@ -4,7 +4,7 @@ var Robot = function (name) {
 }
 
 Robot.prototype.sayHi = function (toWho) {
-    if (isFunctional === true) {
+    if (this.isFunctional === true) {
         console.log("Robot " + this.name + " greets " + toWho);
     }
     else {
@@ -14,10 +14,15 @@ Robot.prototype.sayHi = function (toWho) {
 
 Robot.prototype.changeName = function (newname) {
     console.log("Robot " + this.name + "changes name to " + newname);
-    name = newname;
+    this.name = newname;
 };
 
 Robot.prototype.fixIt = function () {
     this.isFunctional = true;
     console.log("Robot " + this.name + "was fixed");
 };
+
+testRobot= new Robot("Test Raobo Name");
+testRobot.sayHi('Igor');
+testRobot.changeName("Test Robot New Name");
+testRobot.fixIt();
