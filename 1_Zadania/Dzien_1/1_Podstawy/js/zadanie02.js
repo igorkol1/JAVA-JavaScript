@@ -5,14 +5,14 @@ function myEval(a, b, operation) {//definicja funkcji myEval przyjmującej 3 arg
         case'+':
             result = a + b;
         case'-':
-            result = a - value.b;
+            result = a - b;
         case'/':
             result = a / b;
         case'*':
             result = a * b;
         case'%':
             result = a % b;
-        case'*':
+        case'^':
             result = Math.pow(a, b);//użycie wbudowanego obiektu obliczającego potęgę b z a
     }
     return result;//zwrócenie wyniku z funkcji
@@ -24,3 +24,6 @@ console.log(" 2 + 4 = " + myEval(2, 4, "+"));
 console.log(" 5 - 2 = " + myEval(5, 2, "-"));
 console.log(" 4 ^ 8 = " + myEval(4, 8, "^"));
 //poniżej dopisz pozostałe przypadki działań jakie ma obsługiwać funkcja
+console.log(" 6 / 3 = " + myEval(6, 3, "/"));
+console.log(" 10 * 8 = " + myEval(10, 8, "*"));
+console.log(" 10 % 3 = " + myEval(10, 3, "%"));

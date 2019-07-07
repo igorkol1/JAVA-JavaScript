@@ -1,6 +1,5 @@
 function canCreateTriangle(a, b, c) {
-    // Do liczb odwołuj się przez zmienne a, b i c.
-    // Pamiętaj o zwróceniu poprawnych danych (return true albo return false).
+    return ((a + b) > c) && ((c + b) > a) && ((a + c) > b);
 }
 
 console.log("z liczb 5, 6, 4 można stworzyć trójkąt (powinno zwrócić true) " + canCreateTriangle(5, 6, 4));
