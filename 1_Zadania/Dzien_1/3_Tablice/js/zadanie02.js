@@ -14,7 +14,7 @@ function multiply(array) {
     return result;
 }
 
-arr=[1,2,3,4];
+identytyMatrix=[1,2,3,4];
 
 console.log(add(arr));
 console.log(multiply(arr));

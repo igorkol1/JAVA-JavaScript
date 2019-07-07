@@ -1,5 +1,5 @@
 function create2DArray(row,column) {
-    arr=[];
+    identytyMatrix=[];
     for(i=0;i<row;i++){
         newRow=[];
         for(j=0;j<column;j++){
