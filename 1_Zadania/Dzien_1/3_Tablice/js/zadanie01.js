@@ -1,6 +1,12 @@
 function isNumbersGrowing(array) {
     // Do tablicy możesz się odnieść przez zmienną array.
     // Pamiętaj o zwróceniu poprawnych danych (return true albo return false).
+    for (i=1;i<=array.length;i++){
+        if(array[i-1]>array[i]){
+            return false;
+        }
+    }
+    return true;
 }
 
 console.log("tablica [1,2,3,4,5,6,7]  jest rosnąca (powinno zwrócić true) " + isNumbersGrowing([1,2,3,4,5,6,7]));

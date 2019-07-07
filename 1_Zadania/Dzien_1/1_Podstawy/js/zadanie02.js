@@ -4,16 +4,22 @@ function myEval(a, b, operation) {//definicja funkcji myEval przyjmującej 3 arg
     switch (operation) {
         case'+':
             result = a + b;
+            break;
         case'-':
             result = a - b;
+            break;
         case'/':
             result = a / b;
+            break;
         case'*':
             result = a * b;
+            break;
         case'%':
             result = a % b;
+            break;
         case'^':
             result = Math.pow(a, b);//użycie wbudowanego obiektu obliczającego potęgę b z a
+            break;
     }
     return result;//zwrócenie wyniku z funkcji
     //Koniec ciała funkcji
